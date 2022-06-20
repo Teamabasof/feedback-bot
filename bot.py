@@ -35,7 +35,7 @@ bot = Client(
 def command1(bot, message):
     text = "ReplyKeyboard istifadə edin..."
     reply_markup = ReplyKeyboardMarkup(buttons.REPLY_BUTTONS, one_time_keyboard=False, resize_keyboard=True)
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/f7dc9203585394d0595b1.jpg",
+    bot.send_photo(message.chat.id, "https://telegra.ph/file/6d455a95b839f7d6cb1f3.jpg",
                    caption=messages.START_TEXT_CAPTION_TEXT),
     bot.send_message(Config.LOG_CHANNEL,
                      f"Yeni istifadəçi!\n\n◉ İstifadəçi - {message.from_user.first_name}\n◉ Qoşulma vaxtı - {date_info.POSTED_TIME}\n◉ Qoşulma tarixi - {date_info.POSTED_DATE}")
