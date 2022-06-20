@@ -8,10 +8,10 @@
 
 
 
-CAPTCHA_TEX_T = "Select the MOST SUITABLE EMOJI that you can see on ths picture"
+CAPTCHA_TEX_T = "Şəkildə gördüyünüz ƏN UYĞUN EMOJİ-ni seçin"
 
-FAIL_CAPTCHA = "You failed!\n\nTry again /captcha"
+FAIL_CAPTCHA = "Siz uğursuz oldunuz!\n\nYenidən cəhd elə /captcha"
 
-PASS_CAPTCHA = "You successfully completed captcha🎆\n\nYou are a human!"
+PASS_CAPTCHA = "Siz captcha-nı uğurla tamamladınız🎆\n\nSən insansan!"
 
-MULTY_FAIL = "❌You have ALREADY FAILED captcha but you can have a try again.\n\nReload /captcha"
+MULTY_FAIL = "❌ARTIQ UĞURSUZ captchanız var, lakin yenidən cəhd edə bilərsiniz\n\nReload /captcha"
