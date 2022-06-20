@@ -33,12 +33,12 @@ bot = Client(
 
 @bot.on_message(filters.command("start") & filters.private)
 def command1(bot, message):
-    text = "Use ReplyKeyboard..."
+    text = "ReplyKeyboard istifadə edin..."
     reply_markup = ReplyKeyboardMarkup(buttons.REPLY_BUTTONS, one_time_keyboard=False, resize_keyboard=True)
     bot.send_photo(message.chat.id, "https://telegra.ph/file/f7dc9203585394d0595b1.jpg",
                    caption=messages.START_TEXT_CAPTION_TEXT),
     bot.send_message(Config.LOG_CHANNEL,
-                     f"New User!\n\n◉ User - {message.from_user.first_name}\n◉ Joined time - {date_info.POSTED_TIME}\n◉ Joined date - {date_info.POSTED_DATE}")
+                     f"Yeni istifadəçi!\n\n◉ İstifadəçi - {message.from_user.first_name}\n◉ Qoşulma vaxtı - {date_info.POSTED_TIME}\n◉ Qoşulma tarixi - {date_info.POSTED_DATE}")
     message.reply(
         text=text,
         reply_markup=reply_markup,
@@ -48,7 +48,7 @@ def command1(bot, message):
 
 # Learn bots section
 
-@bot.on_message(filters.regex("Learn Bots"))
+@bot.on_message(filters.regex("Botları öyrənin"))
 def reply_to_Learn_Bots(bot, message):
     text = messages.LEARN_TEXT
     reply_markup = ReplyKeyboardMarkup(buttons.LEARN_REPLY_BUTTONS, one_time_keyboard=False, resize_keyboard=True)
@@ -66,48 +66,36 @@ async def restric_sticker(bot, message):
     bot.send_message(message.chat.id, "Oops!\n\nStickers has been restricted")
 
 
-@bot.on_message(filters.regex("Song Download Bot🤖💖"))
+@bot.on_message(filters.regex("UserTaggerBot💖"))
 def reply_to_utube(bot, message):
-    bot.send_message(message.chat.id, "Song Downloader bot!!")
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/87ce14694a8c1d65cffaf.jpg", caption="<b>Step 1</b>")
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/13218e7e5fb04f37d555e.jpg",
-                   caption="<b>Step 2\nYou must send the song like this👇👇\n   ️/song Senorita</b>")
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/a3de0355d3fa67676e680.jpg", caption="<b>Step 3</b>")
+    bot.send_message(message.chat.id, "Telegram tag botu!!")
+    bot.send_photo(message.chat.id, "Telegram tag botu @UserTaggerAz_bot Telegram uzre Qrup və Kanallar da tag prosessin edir")
 
 
-@bot.on_message((filters.regex("Torrent Download Bot🤖💖")))
+@bot.on_message((filters.regex("Musiqi Bot🤖💖")))
 def reply_to_s_ong(bot, message):
-    bot.send_message(message.chat.id, "Torrent downloader bot!")
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/cedb06244d2f74979095f.jpg", caption="<b>Step 1</b>")
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/b5956b401cb68cd7b8d2f.jpg", caption="<b>Step 2</b>")
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/a3d2f02b3c7e4ab742bc8.jpg", caption="<b>Step 3</b>")
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/17f2f0820c5007b136086.jpg", caption="<b>Step 4</b>")
+    bot.send_message(message.chat.id, "Bot yaxinda hazir olacaq!")
+    bot.send_photo(message.chat.id, "BOT yaxinda sizlerle olacaq")
 
 
-@bot.on_message((filters.regex("Youtube Video Download Bot🤖💖")))
+@bot.on_message((filters.regex("Yeni Bot🤖💖")))
 def reply_to_s_ong(bot, message):
-    bot.send_message(message.chat.id, "Youtube Video Downloader bot!!!")
-    message.reply_chat_action("upload_photo")
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/81aab8398259866256409.jpg", caption="<b>Step 1</b>")
-    message.reply_chat_action("upload_photo")
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/e1c08af0c0e5f28053855.jpg", caption="<b>Step 2</b>")
-    message.reply_chat_action("upload_photo")
-    bot.send_photo(message.chat.id, "https://telegra.ph/file/3fc72cf3f77f4e4c3d28f.jpg", caption="<b>Step 3</b>")
+    bot.send_message(message.chat.id, "Yeni bot hazirliq prosessinde di!!!")
 
 
 # About bot section
 
-@bot.on_message(filters.regex("About Bot"))
+@bot.on_message(filters.regex("BOT HAQQINDA🤖"))
 def reply_to_AboutBot(bot, message):
-    bot.send_message(message.chat.id, "<ins>**About Bot**</ins>\n\n"
-                                      "Name: <a href=https://t.me/sanilaassistant_bot>Sanila's Assistant Bot ✨</a>\n\n"
-                                      "Created on: 11/21/2021🎂\n\n"
-                                      "Latest Version:  v0.8.0\n\n"
-                                      "Language: <a href=www.python.org>Python</a>\n\n"
+    bot.send_message(message.chat.id, "<ins>**Bot haqqında**</ins>\n\n"
+                                      "Adı: <a href=https://t.me/TEAMABASOFASISSTAN_bot>TEAMABASOF ASİSSTAN ✨</a>\n\n"
+                                      "Yaradılma tarixi: 06/20/2022🎂\n\n"
+                                      "Ən son versiya:  v0.8.0\n\n"
+                                      "Dil: <a href=www.python.org>Python</a>\n\n"
                                       "Framework: <a href=https://docs.pyrogram.org/>Pyrogram</a>\n\n"
                                       "Server: <a href=https://heroku.com>Heroku</a>\n\n"
-                                      "Developer: <a href=https://github.com/sanila2007>Sanila Ranatunga\n\n</a>"
-                                      "Source: 🔓\n\n", disable_web_page_preview=True)
+                                      "Sahib: <a href=https://t.me/TTteamabasof\n\n</a>"
+                                      "Mənbə: 🔓\n\n", disable_web_page_preview=True)
 
 
 # Contact section
@@ -119,15 +107,15 @@ def reply_to_Contact(bot, message):
 
 # About Developer
 
-@bot.on_message(filters.regex("About Developer"))
+@bot.on_message(filters.regex("Sahibim haqdda melumat"))
 def reply_to_About(bot, message):
     bot.send_message(message.chat.id,
-                     "**<ins>About Developer</ins>**\n\n""❖ Name : ``Sanila Ranatunga``\n\n""❖ Age : 15 Years (2022\n\n""❖ Birthday : 09.01.2007\n\n""❖ From : Sri Lanka🇱🇰\n\n""❖ Skills : Programmer , Developer\n\n""❖ Ambition : Be a software engineer\n\n""❖ Languages : Python, HTML, CSS\n\n❖ Still Learning : C++, JS, Java")
+                     "**<ins>Sahibim haqdda melumat</ins>**\n\n""❖ Adı: ``Abasov Rəhim``\n\n""❖ Yaş : 16 İl (2022\n\n""❖ Ad günü : 03.27.2006\n\n""❖ Kimdən : TEAMABASOF🇦🇿\n\n""❖ Bacarıqlar : Proqramist , Usta\n\n""❖ Ambisiya : Proqram mühəndisi olun\n\n""❖ Dillər : Python, HTML, CSS\n\n❖ Hələ də Öyrənmək : C++, JS, Java")
 
 
 # Home
 
-@bot.on_message(filters.regex("Home"))
+@bot.on_message(filters.regex("Ana Menu"))
 def greet(bot, message):
     text = messages.REPLY_MESSAGE
     reply_markup = ReplyKeyboardMarkup(buttons.REPLY_BUTTONS, one_time_keyboard=False, resize_keyboard=True)
@@ -137,7 +125,7 @@ def greet(bot, message):
         disable_web_page_preview=True
 
     )
-@bot.on_message(filters.regex("Finish"))
+@bot.on_message(filters.regex("Bitirin"))
 def reply_finish(bot, message):
     bot.send_message(message.chat.id, messages.REPLY_MESSAGE, reply_markup=ReplyKeyboardMarkup(buttons.REPLY_BUTTONS, resize_keyboard=True, one_time_keyboard=False))
 
@@ -155,7 +143,7 @@ def reply_to_Feedback(bot, message):
 
 # Credits
 
-@bot.on_message(filters.regex("Credits"))
+@bot.on_message(filters.regex("Kreditlər"))
 def reply_to_Credits(bot, message):
     text = messages.CREDITS_TEXT
     reply_markup = ReplyKeyboardMarkup(buttons.HOME_BUTTON_CR, one_time_keyboard=False, resize_keyboard=True)
@@ -170,7 +158,7 @@ def reply_to_Credits(bot, message):
 
 # Changelog Section
 
-@bot.on_message(filters.regex("Changelog"))
+@bot.on_message(filters.regex("Dəyişikliklər qeydi"))
 def reply_to_Changelog(bot, message):
     reply_markup = ReplyKeyboardMarkup(buttons.HOME_BUTTON_CR, resize_keyboard=True, one_time_keyboard=False)
     bot.send_message(message.chat.id, messages.CHANGELOG_TEXT, disable_web_page_preview=True, reply_markup=reply_markup)
@@ -178,7 +166,7 @@ def reply_to_Changelog(bot, message):
 
 # Assistant Bot Feedback/Report bugs centre
 
-@bot.on_message(filters.regex("Sanila Assistant Bot"))
+@bot.on_message(filters.regex("UserTaggerBot"))
 def reply_to_Assistant(bot, message):
     reply_markup = ForceReply(message.chat.id)
     bot.send_message(message.chat.id, messages.SANILA_ASSISTANT_TEXT,
@@ -188,7 +176,7 @@ def reply_to_Assistant(bot, message):
 
 # Reporting area - Song Downloader bot
 
-@bot.on_message(filters.regex("Song Downloader Bot"))
+@bot.on_message(filters.regex("Yebi Bot"))
 def reply_to_Song(bot, message):
     reply_markup = ForceReply(message.chat.id)
     text = messages.SONG_DOWNLOADER_TEXT
@@ -201,7 +189,7 @@ def reply_to_Song(bot, message):
 
 # Rating bots
 
-@bot.on_message(filters.regex("Rate Bot"))
+@bot.on_message(filters.regex("Botu qiymətləndirin"))
 def reply_to_rate_bots(bot, message):
     text = ratings.RATINGS_TEXT
     reply_markup = ReplyKeyboardMarkup(ratings.RATINGS_BUTTONS, resize_keyboard=True, one_time_keyboard=False)
@@ -216,29 +204,29 @@ def reply_to_rate_bots(bot, message):
 
 @bot.on_message(filters.regex("Assistant Bot"))
 def reply_to_rating_assistant(bot, message):
-    bot.send_poll(message.chat.id, "How many stars would you like to give to Sanila Assistant Bot?",
+    bot.send_poll(message.chat.id, "TEAMABASOF ASİSSTAN Bota nece ulduz ses verersiz?",
                   ["⭐", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐"])
     bot.send_message(message.chat.id,
-                     "**Neither your ratings nor others ratings can see anyone due to privacy of users.** Your ratings will be **reset** when again "
-                     "you came here to rate them but **these ratings will share with admin.**")
+                     "**İstifadəçilərin məxfiliyinə görə nə sizin reytinqləriniz, nə də digər reytinqlər heç kimi görə bilməz.** yenidən gəldiyiniz zaman reytinqləriniz **sıfırlanacaq** "
+                     "lakin bu reytinqlər admin ilə paylaşılacaq.**")
 
 
-@bot.on_message(filters.regex("Torrent Bot"))
+@bot.on_message(filters.regex("UserTaggerBot"))
 def reply_to_rating_assistant(bot, message):
-    bot.send_poll(message.chat.id, "How many stars would you like to give to Torrent Download Bot?",
+    bot.send_poll(message.chat.id, "UserTaggerBot nece ulduz ses verersiz?",
                   ["⭐", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐"])
     bot.send_message(message.chat.id,
-                     "**Neither your ratings nor others ratings can see anyone due to privacy of users.** Your ratings will be **reset** when again "
-                     "you came here to rate them but **these ratings will share with admin.**")
+                     "**İstifadəçilərin məxfiliyinə görə nə sizin reytinqləriniz, nə də digər reytinqlər heç kimi görə bilməz.** Siz onları qiymətləndirmək üçün buraya yenidən gəldiyiniz zaman reytinqləriniz **sıfırlanacaq** "
+                     "lakin bu reytinqlər admin ilə paylaşılacaq.**")
 
 
-@bot.on_message(filters.regex("Youtube Bot"))
+@bot.on_message(filters.regex("Musiqi Bot"))
 def reply_to_rating_assistant(bot, message):
-    bot.send_poll(message.chat.id, "How many stars would you like to give to Youtube Video Download Bot?",
+    bot.send_poll(message.chat.id, "Musiqi bot nece ulduz ses verersiz?",
                   ["⭐", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐"])
     bot.send_message(message.chat.id,
-                     "**Neither your ratings nor others ratings can see anyone due to privacy of users.** Your ratings will be **reset** when again "
-                     "you came here to rate them but **these ratings will share with admin.**")
+                     "**İstifadəçilərin məxfiliyinə görə nə sizin reytinqləriniz, nə də digər reytinqlər heç kimi görə bilməz.** Siz onları qiymətləndirmək üçün buraya yenidən gəldiyiniz zaman reytinqləriniz **sıfırlanacaq** "
+                     "lakin bu reytinqlər admin ilə paylaşılacaq.**")
 
 
 @bot.on_message(filters.regex("Song Bot"))
@@ -246,13 +234,13 @@ async def reply_to_rating_assistant(bot, message):
     await bot.send_poll(message.chat.id, "How many stars would you like to give to Song Download Bot?",
                         ["⭐", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐"])
     await bot.send_message(message.chat.id,
-                           "**Neither your ratings nor others ratings can see anyone due to privacy of users.** Your ratings will be **reset** when again "
-                           "you came here to rate them but **these ratings will share with admin.**")
+                           "**İstifadəçilərin məxfiliyinə görə nə sizin reytinqləriniz, nə də digər reytinqlər heç kimi görə bilməz.** Siz onları qiymətləndirmək üçün buraya yenidən gəldiyiniz zaman reytinqləriniz **sıfırlanacaq** "
+                     "lakin bu reytinqlər admin ilə paylaşılacaq.**")
 
 
 # Reporting area - Torrent downloader bot
 
-@bot.on_message(filters.regex("Torrent Downloader Bot"))
+@bot.on_message(filters.regex("UserTaggerBot"))
 def reply_to_Torrent(bot, message):
     reply_markup = ForceReply(message.chat.id)
     text = messages.TORRENT_DOWNLOADER_TEXT
@@ -265,7 +253,7 @@ def reply_to_Torrent(bot, message):
 
 # Reporting area - Youtube video downloader bot
 
-@bot.on_message(filters.regex("Youtube Video Downloader Bot"))
+@bot.on_message(filters.regex("Musiqi Bot"))
 def reply_to_Youtube(bot, message):
     text = messages.YOUTUBE_VIDEO_DOWNLOADER_TEXT
     reply_markup = ForceReply(message.chat.id)
@@ -291,7 +279,7 @@ def captch(bot, message):
 
 @bot.on_message(filters.private)
 def fbb(bot, message):
-    tet = f"**<u>Feedback Information</u>**\n\nMessage - `{message.text}`\nWord count - {message.text.split()}\nPosted by - {message.from_user.first_name}\nUser ID - {message.from_user.id}\nUsername - @{message.chat.username}\nLanguage - {message.from_user.language_code}\nChat type - {message.chat.type}\nPosted date - {date_info.POSTED_DATE}\nPosted time - {date_info.POSTED_TIME}\nDate of reply - {date_info.DATE_OF_REPLY}\n\n<i>*Add more feedbacks or click finish to finish this process!</i>"
+    tet = f"**<u>Əlaqə məlumatı</u>**\n\nMesaj - `{message.text}`\nSözlərin sayı - {message.text.split()}\nGöndərən- {message.from_user.first_name}\nİsdifadəçi ID - {message.from_user.id}\nİstifadəçi adı - @{message.chat.username}\nDil - {message.from_user.language_code}\nSöhbət növü - {message.chat.type}\nGöndərmə tarixi - {date_info.POSTED_DATE}\nGöndərmə vaxtı - {date_info.POSTED_TIME}\nCavab tarixi - {date_info.DATE_OF_REPLY}\n\n<i>*Daha çox rəy əlavə edin və ya bu prosesi başa çatdırmaq üçün başa vurun!</i>"
     reply_markup = ReplyKeyboardMarkup(buttons.FINISH_FEEDBACK_BUTTONS, one_time_keyboard=True, resize_keyboard=True)
     message.reply(
         text=tet,
@@ -299,7 +287,7 @@ def fbb(bot, message):
         quote=True
     )
 
-    bot.send_message(Config.FEEDBACK_CHANNEL, "**New feedback available!**\n\n" + tet)
+    bot.send_message(Config.FEEDBACK_CHANNEL, "**Yeni rəy mövcuddur!**\n\n" + tet)
 
 
 @bot.on_callback_query()
@@ -322,6 +310,6 @@ def callback_query(Client, CallbackQuery):
         )
 
 
-print("Bot is alive📶✨")
+print("Bot Aktivdir📶✨")
 
 bot.run()
