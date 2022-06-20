@@ -9,76 +9,76 @@
 
 REPORT_BUGS_BUTTONS = [
     [
-        ("Sanila Assistant Bot🤖💖")
+        ("TEAMABASOF ASİSSTAN🤖💖")
     ],
     [
-        ("Song Downloader Bot🤖💖")
+        ("UserTaggerBot🤖💖")
     ],
     [
-        ("Torrent Downloader Bot🤖💖")
+        ("Musiqi Bot🤖💖")
     ],
     [
-        ("Home 🔙"),
-        ("Youtube Video Downloader Bot🤖💖")
+        ("Ana menu 🔙"),
+        ("Yeni Bot🤖💖")
     ]
 ]
 
 REPLY_BUTTONS = [
     [
-        ("About Developer ☘️"),
-        ("About Bot 🤖")
+        ("Sahib haqqında ☘️"),
+        ("Bot haqqında 🤖")
     ],
     [
-        ("Learn Bots 👨‍🏫"),
-        ("Feedback 📝")
+        ("Botları öyrənin 👨‍🏫"),
+        ("Əlaqə 📝")
     ],
     [
-        ("Rate Bots ⭐"),
-        ("Credits 📈")
+        ("Botları qiymətləndirin ⭐"),
+        ("Kreditlər 📈")
     ],
     [
         ("Contact 📞"),
-        ("Changelog ♾️")
+        ("Dəyişikliklər jurnalı ♾️")
     ]
 ]
 
 LEARN_REPLY_BUTTONS = [
     [
-        ("Song Download Bot🤖💖")
+        ("UserTaggerBot🤖💖")
     ],
     [
-        ("Torrent Download Bot🤖💖")
+        ("Musiqi Bot🤖💖")
     ],
     [
-        ("Home 🔙"),
-        ("Youtube Video Download Bot🤖💖")
+        ("Ana Menu 🔙"),
+        ("Yeni Bot🤖💖")
     ]
 ]
 
 FEEDBACK_REPLY_BUTTONS = [
     [
-        ("Sanila Assistant Bot🤖💖")
+        ("TEAMABASOF ASİSSTAN BOT🤖💖")
     ],
     [
-        ("Song Downloader Bot🤖💖")
+        ("UserTaggerBot🤖💖")
     ],
     [
-        ("Torrent Downloader Bot🤖💖")
+        ("Musiqi Bot🤖💖")
     ],
     [
-        ("Home 🔙"),
-        ("Youtube Video Downloader Bot🤖💖")
+        ("Ana Menu 🔙"),
+        ("Yeni Bot🤖💖")
     ]
 ]
 
 HOME_BUTTON_CR = [
     [
-        ("Home 🔙")
+        ("Ana menu 🔙")
     ]
 ]
 
 FINISH_FEEDBACK_BUTTONS = [
     [
-        ("Finish📩")
+        ("Bitir📩")
     ]
 ]
