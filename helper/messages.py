@@ -9,25 +9,25 @@
 import pyrogram
 
 
-FEEDBACK_REPLY_TEXT = "First please select a bot!!👮"
+FEEDBACK_REPLY_TEXT = "Əvvəlcə bot seçin!👮"
 
-CONTACT_TEXT = "**Contact**\n\n√ You can connect with the admin from here.\n\n√ Type your message here and send.\n\n√ After you finish click <<**Finish📩**>>"
+CONTACT_TEXT = "**Əlaqə**\n\n√ Adminlə buradan əlaqə saxlaya bilərsiniz.\n\n√ Mesajınızı bura yazın və göndərin.\n\n√ Bitirdikdən sonra <<Bitir📩>> üzərinə klikləyin**>>"
 
-REPLY_MESSAGE = "Hello dear, You can ue this bot to✨,\n\n" \
-                "    -Give feedbacks  🐞.\n\n" \
-                "    -Give suggestions🐣.\n\n" \
-                "    -Contact with Sanila🐍.\n\n" \
-                "    -Ask any questions 🦑.\n\n" \
-                "    -Learn how bots work🤖.\n\nℹ️️Note: Click any button from ReplyKeyboard as your choice..."
+REPLY_MESSAGE = "Salam əzizim, Siz bu botu istifadə edə bilərsiniz✨,\n\n" \
+                "    -Rəy bildirin  🐞.\n\n" \
+                "    -Təkliflər verin🐣.\n\n" \
+                "    -TEAMABASOF ilə əlaqə saxlayin🐍.\n\n" \
+                "    -İstənilən sualı verin 🦑.\n\n" \
+                "    -Botların necə işlədiyini öyrənin.\n\nℹ️️Qeyd: Seçdiyiniz kimi ReplyKeyboard-dan istənilən düyməyə klikləyin..."
 
-LEARN_TEXT = "Please select the bot that you want to learn!!👨‍🏫"
+LEARN_TEXT = "Zəhmət olmasa öyrənmək istədiyiniz botu seçin!!👨‍🏫"
 
-START_TEXT_CAPTION_TEXT = "Hello user💖,\n\n" \
+START_TEXT_CAPTION_TEXT = "Salam user💖,\n\n" \
                           "◇───────────────◇\n\n" \
-                          "**These are the bots that created by Sanila🙇‍♂.**\n\n" \
-                          "▬▬▬ ◈ <a href=https://t.me/songdownload597_bot>Song Download Bot</a>\n" \
-                          "▬▬▬ ◈ <a href=https://t.me/torrentdownloader88_bot>Torrent Download Bot</a>\n" \
-                          "▬▬▬ ◈ <a href=https://t.me/youtubevideodownloader45_bot>Youtube Vide Download Bot</a>\n\n" \
+                          "**Bunlar Teamabasof tərəfindən yaradılmış botlardır🙇‍♂.**\n\n" \
+                          "▬▬▬ ◈ <a href=https://t.me/UserTaggerAz_bot>Tag botu</a>\n" \
+                          "▬▬▬ ◈ <a href=https://t.me/teammusicixBot>Musiqi Bot</a>\n" \
+                          "▬▬▬ ◈ <a href=https://t.me/yakindabotumuz>Yeni Bot</a>\n\n" \
                           "◇───────────────◇\n\n" \
                           "**CAPTCHA** - Prove yourself that **YOU ARE A HUMAN!** /captcha\n\n" \
                           "☘️Developer : ``<i>Sanila Ranatunga</i>``\n\n" \
