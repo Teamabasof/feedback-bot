@@ -75,7 +75,7 @@ WRONG_CAPTCHA  = [
 
 RELOAD_CAPTCHA = [
     [
-        InlineKeyboardButton("Reload CAPTCHA", callback_data="Reload CAPTCHA", url="https://t.me/sanilaassistant_bot?start=start")
+        InlineKeyboardButton("CAPTCHA-nı yenidən yükləyin", callback_data="Reload CAPTCHA", url="https://t.me/TEAMABASOFASISSTAN_bot?start=start")
     ]
 ]
 
